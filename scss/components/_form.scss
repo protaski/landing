@@ -1,6 +1,6 @@
 .form-inline input {
     vertical-align: middle;
-    padding: 16px;
+    padding: $small-padding;
     background-color: $color-cultured;
     border: none;
     margin-bottom: $medium-margin;
@@ -9,7 +9,7 @@
 }
 
 .form-inline button {
-    padding: 16px;
+    padding: $small-padding;
     border: none;
     background-color: $color-cultured;
     color: $color-han-purple;
@@ -18,4 +18,9 @@
     cursor: pointer;
     position: absolute;
     margin-left: -9rem;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
 }
