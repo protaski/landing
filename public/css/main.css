@@ -50,6 +50,10 @@ img {
   width: 46%;
 }
 
+svg {
+  cursor: pointer;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   line-height: 2.2rem;
@@ -62,7 +66,8 @@ h1 {
 }
 
 a {
-  color: #F9F9F9;
+  color: var(--color-text);
+  text-decoration: none;
 }
 
 p {
@@ -76,21 +81,17 @@ footer {
   align-items: center;
   height: var(--nav-height);
   bottom: 0;
+  justify-content: center;
+  width: 100vw;
 }
-footer .footer__nav {
-  align-self: stretch;
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-  padding: 0 4rem;
-  height: 100%;
+footer .footer__nav--item {
+  padding: 0 2rem;
 }
-footer .footer__nav > p {
-  font-size: 1.8rem;
-  margin: 0;
-  color: white;
+footer .footer__nav--social {
+  padding: 0 1rem;
 }
-footer svg {
+
+svg {
   margin-left: 1rem;
   cursor: pointer;
 }

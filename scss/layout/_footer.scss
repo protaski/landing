@@ -4,33 +4,19 @@ footer {
     align-items: center;
     height: var(--nav-height);
     bottom: 0;
+    justify-content: center;
+    width: 100vw;
 
-    .footer__nav {
-        align-self: stretch;
-        display: flex;
-        align-items: center;
-        margin-left: auto;
-        padding: 0 4rem;
-        height: 100%;
-
-        &>p {
-            font-size: $default-font-size;
-            margin: 0;
-            color: white;
-
-        }
+    .footer__nav--item {
+        padding: 0 2rem;
     }
 
-    svg {
-        margin-left: $small-margin;
-        cursor: pointer;
+    .footer__nav--social {
+        padding: 0 1rem;
     }
 }
 
-
-// footer {
-//     position: absolute;
-//     bottom: 0;
-//     z-index: 1;
-//     padding: 2rem;
-// }
+svg {
+    margin-left: $small-margin;
+    cursor: pointer;
+}

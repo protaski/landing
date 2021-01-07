@@ -10,7 +10,8 @@ h1 {
 }
 
 a {
-    color: $color-cultured;
+    color: var(--color-text);
+    text-decoration: none;
 }
 
 p {
