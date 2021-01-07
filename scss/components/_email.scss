@@ -1,0 +1,21 @@
+.form-inline input {
+    vertical-align: middle;
+    padding: 16px;
+    background-color: $color-cultured;
+    border: none;
+    margin-bottom: $medium-margin;
+    font-family: $montserrat;
+    width: 32rem;
+}
+
+.form-inline button {
+    padding: 16px;
+    border: none;
+    background-color: $color-cultured;
+    color: $color-han-purple;
+    font-family: $montserrat;
+    font-weight: 700;
+    cursor: pointer;
+    position: absolute;
+    margin-left: -9rem;
+}

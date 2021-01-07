@@ -75,6 +75,28 @@ p {
   font-weight: 300;
 }
 
+.form-inline input {
+  vertical-align: middle;
+  padding: 16px;
+  background-color: #F9F9F9;
+  border: none;
+  margin-bottom: 4rem;
+  font-family: "Montserrat", sans-serif;
+  width: 32rem;
+}
+
+.form-inline button {
+  padding: 16px;
+  border: none;
+  background-color: #F9F9F9;
+  color: #652BE1;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  position: absolute;
+  margin-left: -9rem;
+}
+
 footer {
   position: absolute;
   display: flex;
