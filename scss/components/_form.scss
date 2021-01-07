@@ -46,22 +46,36 @@ input:focus {
 
 // mobile
 .form-inline-mobile input {
-    vertical-align: middle;
-    padding: $small-padding;
-    background-color: $color-cultured;
-    border: none;
-    font-family: $montserrat;
-    width: 32rem;
+    visibility: hidden;
+    display: none;
+
+    @include respond(phone) {
+        visibility: visible;
+        display: block;
+        vertical-align: middle;
+        padding: $small-padding;
+        background-color: $color-cultured;
+        border: none;
+        font-family: $montserrat;
+        width: 32rem;
+    }
 }
 
 .form-inline-mobile button {
-    padding: $small-padding;
-    border: none;
-    background-color: $color-persian-indigo;
-    color: $color-cultured;
-    font-family: $montserrat;
-    width: 32rem;
-    font-weight: 700;
-    cursor: pointer;
-    margin-bottom: $large-margin
+    visibility: hidden;
+    display: none;
+
+    @include respond(phone) {
+        visibility: visible;
+        display: block;
+        padding: $small-padding;
+        border: none;
+        background-color: $color-persian-indigo;
+        color: $color-cultured;
+        font-family: $montserrat;
+        width: 32rem;
+        font-weight: 700;
+        cursor: pointer;
+        margin-bottom: $large-margin
+    }
 }

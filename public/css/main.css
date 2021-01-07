@@ -163,24 +163,40 @@ input:focus {
 }
 
 .form-inline-mobile input {
-  vertical-align: middle;
-  padding: 1.6rem;
-  background-color: #F9F9F9;
-  border: none;
-  font-family: "Montserrat", sans-serif;
-  width: 32rem;
+  visibility: hidden;
+  display: none;
+}
+@media only screen and (max-width: 37.5em) {
+  .form-inline-mobile input {
+    visibility: visible;
+    display: block;
+    vertical-align: middle;
+    padding: 1.6rem;
+    background-color: #F9F9F9;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    width: 32rem;
+  }
 }
 
 .form-inline-mobile button {
-  padding: 1.6rem;
-  border: none;
-  background-color: #3B1195;
-  color: #F9F9F9;
-  font-family: "Montserrat", sans-serif;
-  width: 32rem;
-  font-weight: 700;
-  cursor: pointer;
-  margin-bottom: 8rem;
+  visibility: hidden;
+  display: none;
+}
+@media only screen and (max-width: 37.5em) {
+  .form-inline-mobile button {
+    visibility: visible;
+    display: block;
+    padding: 1.6rem;
+    border: none;
+    background-color: #3B1195;
+    color: #F9F9F9;
+    font-family: "Montserrat", sans-serif;
+    width: 32rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin-bottom: 8rem;
+  }
 }
 
 footer {
@@ -192,19 +208,20 @@ footer {
   justify-content: center;
   width: 100vw;
 }
+@media only screen and (max-width: 37.5em) {
+  footer {
+    position: relative;
+    flex-direction: column;
+    height: 40%;
+    bottom: 0;
+    background-color: #3B1195;
+  }
+}
 footer .footer__nav--item {
   padding: 0 2rem;
 }
 footer .footer__nav--social {
   padding: 0 1rem;
-}
-@media only screen and (max-width: 37.5em) {
-  footer {
-    margin-top: 8rem;
-    flex-direction: column;
-    margin: 1rem;
-    text-align: center;
-  }
 }
 
 footer svg {
@@ -224,8 +241,18 @@ footer svg {
   padding: 0 2rem;
   height: 100%;
 }
+@media only screen and (max-width: 37.5em) {
+  .legal .legal__nav {
+    flex-direction: column;
+  }
+}
 .legal .legal__nav--social {
   padding: 0 1rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .legal .legal__nav--social {
+    flex-direction: row;
+  }
 }
 
 .flex-container {

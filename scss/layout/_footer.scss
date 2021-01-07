@@ -7,6 +7,14 @@ footer {
     justify-content: center;
     width: 100vw;
 
+    @include respond(phone) {
+        position: relative;
+        flex-direction: column;
+        height: 40%;
+        bottom: 0;
+        background-color: $color-persian-indigo;
+    }
+
     .footer__nav--item {
         padding: 0 2rem;
     }
@@ -14,16 +22,11 @@ footer {
     .footer__nav--social {
         padding: 0 1rem;
     }
-
-    @include respond(phone) {
-        margin-top: $large-margin;
-        flex-direction: column;
-        margin: $small-margin;
-        text-align: center;
-    }
 }
 
 footer svg {
     margin-top: $small-margin;
     cursor: pointer;
 }
+
+// mobile
