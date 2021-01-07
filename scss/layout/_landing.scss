@@ -1,0 +1,45 @@
+.landing__content {
+    @include center;
+    margin: $large-margin;
+
+    @include respond(phone) {
+        margin-top: $small-margin;
+        margin-right: $small-margin;
+        margin-left: $small-margin;
+    }
+
+    .landing__content--item {
+        line-height: $small-line-height;
+        display: inline-block;
+        margin-top: $small-margin;
+    }
+
+    img {
+        width: 14rem;
+        margin-right: $medium-margin;
+
+        @include respond(phone) {
+            visibility: hidden;
+            width: 0;
+        }
+    }
+
+    span {
+        margin-right: $xlarge-margin;
+    }
+
+    .content-primary {
+        &--main {
+            font-size: $large-font-size;
+
+            @include respond(phone) {
+                font-size: 3.2rem;
+            }
+        }
+
+        &--sub {
+            font-size: $medium-font-size;
+            font-weight: 300;
+        }
+    }
+}

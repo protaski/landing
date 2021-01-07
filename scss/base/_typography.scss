@@ -1,0 +1,19 @@
+body {
+    font-family: $montserrat;
+    line-height: $default-line-height;
+    color: var(--color-text);
+}
+
+h1 {
+    font-weight: $default-font-weight;
+    line-height: $large-line-height;
+}
+
+a {
+    color: $color-cultured;
+}
+
+p {
+    font-size: $default-font-size;
+    font-weight: 300;
+}

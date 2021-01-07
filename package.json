@@ -1,0 +1,25 @@
+{
+  "name": "protaski",
+  "version": "1.0.0",
+  "description": "![Firebase Hosting](https://github.com/ronniemyers/xiao-ou/workflows/Firebase%20Hosting/badge.svg)",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch scss/:public/css/",
+    "install": "sudo apt-get install yamllint",
+    "yamllint": "yamllint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/protaski/landing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/protaski/landing/issues"
+  },
+  "homepage": "https://github.com/protaski/landing#readme",
+  "dependencies": {
+    "sass": "^1.32.2"
+  }
+}
