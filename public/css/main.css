@@ -220,8 +220,34 @@ footer {
 footer .footer__nav--item {
   padding: 0 2rem;
 }
+@media only screen and (max-width: 37.5em) {
+  footer .footer__nav--item {
+    padding: 1.6rem;
+  }
+}
+footer .footer__nav--item:nth-child(3) {
+  visibility: hidden;
+  display: none;
+}
+@media only screen and (max-width: 37.5em) {
+  footer .footer__nav--item:nth-child(3) {
+    visibility: visible;
+    display: block;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  footer .footer__nav--item:last-child {
+    visibility: hidden;
+    display: none;
+  }
+}
 footer .footer__nav--social {
   padding: 0 1rem;
+}
+@media only screen and (max-width: 37.5em) {
+  footer .footer__nav--social {
+    flex-direction: row;
+  }
 }
 
 footer svg {

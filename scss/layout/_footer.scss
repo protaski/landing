@@ -17,10 +17,35 @@ footer {
 
     .footer__nav--item {
         padding: 0 2rem;
+
+        @include respond(phone) {
+            padding: $small-padding;
+        }
+
+        &:nth-child(3) {
+            visibility: hidden;
+            display: none;
+
+            @include respond(phone) {
+                visibility: visible;
+                display: block;
+            }
+        }
+
+        &:last-child {
+            @include respond(phone) {
+                visibility: hidden;
+                display: none;
+            }
+        }
     }
 
     .footer__nav--social {
         padding: 0 1rem;
+
+        @include respond(phone) {
+            flex-direction: row;
+        }
     }
 }
 
@@ -28,5 +53,3 @@ footer svg {
     margin-top: $small-margin;
     cursor: pointer;
 }
-
-// mobile
