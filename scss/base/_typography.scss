@@ -14,6 +14,10 @@ h3 {
 a {
     color: var(--color-text);
     text-decoration: none;
+
+    &:hover {
+        color: $color-orange-peel;
+    }
 }
 
 p {

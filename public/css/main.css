@@ -48,6 +48,11 @@ body {
 img {
   width: 46%;
 }
+@media only screen and (max-width: 75em) {
+  img {
+    width: 70%;
+  }
+}
 
 svg {
   cursor: pointer;
@@ -73,6 +78,9 @@ h3 {
 a {
   color: var(--color-text);
   text-decoration: none;
+}
+a:hover {
+  color: #FF9D00;
 }
 
 p {
@@ -190,6 +198,18 @@ svg {
   height: 100%;
   width: 50%;
   margin-left: 8rem;
+}
+@media only screen and (max-width: 75em) {
+  .flex-item-right {
+    margin-left: 8rem;
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .flex-item-right {
+    margin-left: 8rem;
+    width: 80%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
