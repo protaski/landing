@@ -244,12 +244,6 @@ footer .footer__nav--item:nth-child(3) {
 footer .footer__nav--social {
   padding: 0 1rem;
 }
-@media only screen and (max-width: 37.5em) {
-  footer .footer__nav--social {
-    flex-direction: row;
-  }
-}
-
 footer svg {
   margin-top: 1rem;
   cursor: pointer;

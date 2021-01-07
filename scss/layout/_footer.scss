@@ -43,9 +43,7 @@ footer {
     .footer__nav--social {
         padding: 0 1rem;
 
-        @include respond(phone) {
-            flex-direction: row;
-        }
+        @include respond(phone) {}
     }
 }
 
