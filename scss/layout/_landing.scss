@@ -1,45 +1,35 @@
-.landing__content {
-    @include center;
-    margin: $large-margin;
+.description {
+    margin-top: $small-margin;
+    margin-bottom: $small-margin;
+}
 
-    @include respond(phone) {
-        margin-top: $small-margin;
-        margin-right: $small-margin;
-        margin-left: $small-margin;
-    }
+.subscribe p {
+    color: $color-cultured;
+    font-weight: 700;
+    font-size: $small-font-size;
+    margin-top: $default-margin;
+    margin-bottom: $xsmall-margin
+}
 
-    .landing__content--item {
-        line-height: $small-line-height;
-        display: inline-block;
-        margin-top: $small-margin;
-    }
+.flex-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    text-align: right;
+}
 
-    img {
-        width: 14rem;
-        margin-right: $medium-margin;
+.contain {
+    @include center
+}
 
-        @include respond(phone) {
-            visibility: hidden;
-            width: 0;
-        }
-    }
+.flex-item-left img {
+    width: 30%;
+}
 
-    span {
-        margin-right: $xlarge-margin;
-    }
-
-    .content-primary {
-        &--main {
-            font-size: $large-font-size;
-
-            @include respond(phone) {
-                font-size: 3.2rem;
-            }
-        }
-
-        &--sub {
-            font-size: $medium-font-size;
-            font-weight: 300;
-        }
-    }
+.flex-item-right {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    margin-left: $large-margin;
 }

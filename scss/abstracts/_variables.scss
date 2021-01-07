@@ -11,12 +11,12 @@ $color-han-purple: #652BE1;
 
 :root {
     --background-color: #{$color-han-purple};
-    --color-text: #{$color-cultured};
+    --color-text: #{$color-wisteria};
 }
 
 // font
 $default-font-size: 1.8rem;
-$small-font-size: 1.2rem;
+$small-font-size: 1.4rem; //
 $medium-font-size: 2.2rem;
 $large-font-size: 4rem;
 $default-font-weight: 400;
@@ -31,8 +31,9 @@ $medium-line-height: 4rem;
 $small-line-height: 2rem;
 $large-line-height: 5.4rem;
 
-$default-margin: 6rem;
-$small-margin: 1.87rem;
+$default-margin: 2rem; // 
+$xsmall-margin: .6rem; //
+$small-margin: 1rem; //
 $medium-margin: 4rem;
 $large-margin: 8rem;
 $xlarge-margin: 12rem;

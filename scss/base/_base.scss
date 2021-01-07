@@ -25,7 +25,6 @@ body {
   background: var(--background-color);
   box-sizing: border-box;
   height: 100vh;
-  overflow-x: hidden;
 
   @include respond(tab-port) {
     padding: 0;
@@ -35,4 +34,8 @@ body {
 ::selection {
   background-color: $color-persian-indigo;
   color: $color-cultured;
+}
+
+img {
+  width: 46%;
 }
