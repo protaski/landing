@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 :root {
+  --nav-height: 8.125rem;
   --background-color: #652BE1;
   --color-text: #BCA9E4;
 }
@@ -71,9 +72,27 @@ p {
 
 footer {
   position: absolute;
+  display: flex;
+  align-items: center;
+  height: var(--nav-height);
   bottom: 0;
-  z-index: 1;
-  padding: 2rem;
+}
+footer .footer__nav {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  padding: 0 4rem;
+  height: 100%;
+}
+footer .footer__nav > p {
+  font-size: 1.8rem;
+  margin: 0;
+  color: white;
+}
+footer svg {
+  margin-left: 1rem;
+  cursor: pointer;
 }
 
 .description {
@@ -103,7 +122,7 @@ footer {
 }
 
 .flex-item-left img {
-  width: 30%;
+  width: 25%;
 }
 
 .flex-item-right {
