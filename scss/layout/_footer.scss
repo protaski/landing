@@ -14,10 +14,16 @@ footer {
     .footer__nav--social {
         padding: 0 1rem;
     }
+
+    @include respond(phone) {
+        margin-top: $large-margin;
+        flex-direction: column;
+        margin: $small-margin;
+        text-align: center;
+    }
 }
 
-svg {
-    margin-left: $small-margin;
+footer svg {
     margin-top: $small-margin;
     cursor: pointer;
 }

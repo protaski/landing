@@ -1,6 +1,29 @@
+.flex-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    text-align: right;
+
+    @include respond(phone) {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.protaski-logo {
+    @include respond(phone) {
+        margin-top: 20rem;
+    }
+}
+
 .description {
     margin-top: $small-margin;
     margin-bottom: $small-margin;
+
+    @include respond(phone) {
+        margin-left: $medium-margin;
+        margin-right: $medium-margin;
+    }
 }
 
 .subscribe p {
@@ -9,21 +32,24 @@
     font-size: $small-font-size;
     margin-top: $default-margin;
     margin-bottom: $xsmall-margin;
+
+    @include respond(phone) {
+        visibility: hidden;
+    }
 }
 
-.flex-container {
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    text-align: right;
+.google-play {
+    @include respond(phone) {
+        visibility: hidden;
+    }
 }
 
 .contain {
-    @include center
+    @include center;
 }
 
 .flex-item-left img {
-    width: 25%;
+    width: 26%;
 }
 
 .flex-item-right {
@@ -41,5 +67,53 @@
     @include respond(tab-port) {
         margin-left: $large-margin;
         width: 80%;
+    }
+
+    @include respond(phone) {
+        flex-direction: column;
+        text-align: center;
+        margin: auto;
+    }
+
+    & img:first-child {
+        @include respond(phone) {
+            width: 90%;
+        }
+    }
+
+    & img:last-child {
+        @include respond(phone) {
+            width: 70%;
+        }
+    }
+}
+
+// mobile
+.google-play-mobile {
+    visibility: hidden;
+    display: none;
+
+    @include respond(phone) {
+        visibility: visible;
+        display: block;
+        margin: auto;
+        margin-top: $medium-margin;
+    }
+}
+
+.subscribe-mobile {
+    visibility: hidden;
+    display: none;
+
+    @include respond(phone) {
+        visibility: visible;
+        display: block;
+        margin-top: $medium-margin;
+        color: $color-cultured;
+    }
+
+    & p {
+        font-weight: 700;
+        font-size: $default-font-size;
     }
 }

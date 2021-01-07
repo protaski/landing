@@ -50,3 +50,11 @@ svg {
 strong {
   font-weight: 700;
 }
+
+main {
+  overflow: hidden;
+
+  @include respond(phone) {
+    overflow: scroll;
+  }
+}
