@@ -4,7 +4,7 @@ name: Firebase Hosting
 # yamllint disable-line rule:truthy
 on:
   push:
-    branches: [master]
+    branches: [main]
 
 jobs:
   build-and-deploy:
