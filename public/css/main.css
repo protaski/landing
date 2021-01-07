@@ -118,6 +118,19 @@ li {
   position: absolute;
   margin-left: -9rem;
 }
+@media only screen and (max-width: 75em) {
+  .form-inline button {
+    margin-top: 0.2rem;
+    padding: 1.4rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .form-inline button {
+    margin-top: 0.5rem;
+    padding: 1rem;
+    margin-left: -10rem;
+  }
+}
 
 textarea:focus,
 input:focus {
