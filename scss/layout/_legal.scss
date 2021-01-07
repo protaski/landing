@@ -1,0 +1,19 @@
+.legal {
+    display: flex;
+    align-items: center;
+    height: var(--nav-height);
+    justify-content: center;
+
+
+    .legal__nav {
+        display: flex;
+        align-items: center;
+        padding: 0 2rem;
+        height: 100%;
+    }
+
+    .legal__nav--social {
+        padding: 0 1rem;
+
+    }
+}

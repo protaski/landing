@@ -4,9 +4,11 @@ body {
     color: var(--color-text);
 }
 
-h1 {
-    font-weight: $default-font-weight;
-    line-height: $large-line-height;
+h1,
+h2,
+h3 {
+    margin: $medium-margin 0;
+    font-size: $medium-font-size;
 }
 
 a {
@@ -17,4 +19,13 @@ a {
 p {
     font-size: $default-font-size;
     font-weight: 300;
+}
+
+section {
+    margin-right: $large-margin;
+    margin-left: $large-margin;
+}
+
+li {
+    font-size: $small-font-size;
 }

@@ -10,7 +10,6 @@
 html {
   font-size: 62.5%;
   max-width: 100%;
-  overflow: hidden;
 
   @include respond(tab-port) {
     font-size: 46%;
@@ -42,4 +41,8 @@ img {
 
 svg {
   cursor: pointer;
+}
+
+strong {
+  font-weight: 700;
 }

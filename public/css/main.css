@@ -17,7 +17,6 @@
 html {
   font-size: 62.5%;
   max-width: 100%;
-  overflow: hidden;
 }
 @media only screen and (max-width: 56.25em) {
   html {
@@ -54,15 +53,21 @@ svg {
   cursor: pointer;
 }
 
+strong {
+  font-weight: 700;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
-  line-height: 2.2rem;
+  line-height: 2.8rem;
   color: var(--color-text);
 }
 
-h1 {
-  font-weight: 400;
-  line-height: 5.4rem;
+h1,
+h2,
+h3 {
+  margin: 4rem 0;
+  font-size: 2.4rem;
 }
 
 a {
@@ -73,6 +78,15 @@ a {
 p {
   font-size: 1.8rem;
   font-weight: 300;
+}
+
+section {
+  margin-right: 8rem;
+  margin-left: 8rem;
+}
+
+li {
+  font-size: 1.4rem;
 }
 
 .form-inline input {
@@ -121,6 +135,22 @@ footer .footer__nav--social {
 svg {
   margin-left: 1rem;
   cursor: pointer;
+}
+
+.legal {
+  display: flex;
+  align-items: center;
+  height: var(--nav-height);
+  justify-content: center;
+}
+.legal .legal__nav {
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  height: 100%;
+}
+.legal .legal__nav--social {
+  padding: 0 1rem;
 }
 
 .description {
