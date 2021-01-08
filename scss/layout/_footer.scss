@@ -8,46 +8,54 @@ footer {
     width: 100vw;
 
     @include respond(phone) {
-        position: relative;
-        flex-direction: column;
-        height: 40%;
-        bottom: 0;
-        background-color: $color-persian-indigo;
+        visibility: hidden;
+        display: none;
     }
 
     .footer__nav--item {
         padding: 0 2rem;
-
-        @include respond(phone) {
-            padding: $small-padding;
-        }
-
-        &:nth-child(3) {
-            visibility: hidden;
-            display: none;
-
-            @include respond(phone) {
-                visibility: visible;
-                display: block;
-            }
-        }
-
-        &:last-child {
-            @include respond(phone) {
-                visibility: hidden;
-                display: none;
-            }
-        }
     }
 
     .footer__nav--social {
         padding: 0 1rem;
-
-        @include respond(phone) {}
     }
 }
 
 footer svg {
     margin-top: $small-margin;
     cursor: pointer;
+}
+
+//mobile
+.footer__mobile--item {
+    visibility: hidden;
+    display: none;
+
+    @include respond(phone) {
+        visibility: visible;
+        display: block;
+        margin: $small-margin;
+    }
+}
+
+.footer__mobile--container {
+    visibility: hidden;
+    display: none;
+
+    @include respond(phone) {
+        visibility: visible;
+        display: block;
+        align-self: stretch;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        padding: 0 4rem;
+        height: 100%;
+    }
+
+    & svg {
+        margin: $default-margin;
+        margin-top: $medium-margin;
+        margin-bottom: $large-margin;
+    }
 }

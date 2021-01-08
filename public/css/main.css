@@ -210,43 +210,54 @@ footer {
 }
 @media only screen and (max-width: 37.5em) {
   footer {
-    position: relative;
-    flex-direction: column;
-    height: 40%;
-    bottom: 0;
-    background-color: #3B1195;
+    visibility: hidden;
+    display: none;
   }
 }
 footer .footer__nav--item {
   padding: 0 2rem;
 }
-@media only screen and (max-width: 37.5em) {
-  footer .footer__nav--item {
-    padding: 1.6rem;
-  }
+footer .footer__nav--social {
+  padding: 0 1rem;
 }
-footer .footer__nav--item:nth-child(3) {
+
+footer svg {
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.footer__mobile--item {
   visibility: hidden;
   display: none;
 }
 @media only screen and (max-width: 37.5em) {
-  footer .footer__nav--item:nth-child(3) {
+  .footer__mobile--item {
     visibility: visible;
     display: block;
+    margin: 1rem;
   }
+}
+
+.footer__mobile--container {
+  visibility: hidden;
+  display: none;
 }
 @media only screen and (max-width: 37.5em) {
-  footer .footer__nav--item:last-child {
-    visibility: hidden;
-    display: none;
+  .footer__mobile--container {
+    visibility: visible;
+    display: block;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: 0 4rem;
+    height: 100%;
   }
 }
-footer .footer__nav--social {
-  padding: 0 1rem;
-}
-footer svg {
-  margin-top: 1rem;
-  cursor: pointer;
+.footer__mobile--container svg {
+  margin: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 8rem;
 }
 
 .legal {
