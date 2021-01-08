@@ -106,6 +106,16 @@ p {
 section {
   margin-right: 8rem;
   margin-left: 8rem;
+  margin-bottom: 8rem;
+}
+@media only screen and (max-width: 37.5em) {
+  section {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+}
+section p {
+  font-size: 1.8rem;
 }
 
 li {
@@ -249,41 +259,15 @@ footer svg {
     align-self: stretch;
     display: flex;
     align-items: center;
+    justify-content: center;
     margin: auto;
     padding: 0 4rem;
-    height: 100%;
   }
 }
 .footer__mobile--container svg {
   margin: 2rem;
   margin-top: 4rem;
   margin-bottom: 8rem;
-}
-
-.legal {
-  display: flex;
-  align-items: center;
-  height: var(--nav-height);
-  justify-content: center;
-}
-.legal .legal__nav {
-  display: flex;
-  align-items: center;
-  padding: 0 2rem;
-  height: 100%;
-}
-@media only screen and (max-width: 37.5em) {
-  .legal .legal__nav {
-    flex-direction: column;
-  }
-}
-.legal .legal__nav--social {
-  padding: 0 1rem;
-}
-@media only screen and (max-width: 37.5em) {
-  .legal .legal__nav--social {
-    flex-direction: row;
-  }
 }
 
 .flex-container {
@@ -410,6 +394,32 @@ footer svg {
 .subscribe-mobile p {
   font-weight: 700;
   font-size: 1.8rem;
+}
+
+.legal {
+  display: flex;
+  align-items: center;
+  height: var(--nav-height);
+  justify-content: center;
+}
+.legal .legal__nav {
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  height: 100%;
+}
+.legal .legal__nav--social {
+  padding: 0 1rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .legal {
+    visibility: hidden;
+    display: none;
+  }
+}
+.legal svg {
+  margin-top: 1rem;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=main.css.map */

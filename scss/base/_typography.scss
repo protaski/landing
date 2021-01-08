@@ -33,6 +33,17 @@ p {
 section {
     margin-right: $large-margin;
     margin-left: $large-margin;
+    margin-bottom: $large-margin;
+
+    @include respond(phone) {
+        margin-left: $medium-margin;
+        margin-right: $medium-margin;
+
+    }
+
+    & p {
+        font-size: $default-font-size;
+    }
 }
 
 li {

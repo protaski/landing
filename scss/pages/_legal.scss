@@ -4,25 +4,24 @@
     height: var(--nav-height);
     justify-content: center;
 
-
-
     .legal__nav {
         display: flex;
         align-items: center;
         padding: 0 2rem;
         height: 100%;
-
-        @include respond(phone) {
-            flex-direction: column;
-        }
     }
 
     .legal__nav--social {
         padding: 0 1rem;
+    }
 
-        @include respond(phone) {
-            flex-direction: row;
-        }
+    @include respond(phone) {
+        visibility: hidden;
+        display: none;
+    }
 
+    & svg {
+        margin-top: $small-margin;
+        cursor: pointer;
     }
 }
