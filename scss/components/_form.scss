@@ -21,7 +21,7 @@
     font-weight: 700;
     cursor: pointer;
     position: absolute;
-    margin-left: -10rem;
+    margin-left: -9rem;
 
     @include respond(tab-land) {
         margin-top: .2rem;
@@ -31,7 +31,7 @@
     @include respond(tab-port) {
         margin-top: .5rem;
         padding: 1rem;
-        margin-left: -12rem;
+        margin-left: -10rem;
     }
 
     @include respond(phone) {

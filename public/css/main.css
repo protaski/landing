@@ -146,7 +146,7 @@ li {
   font-weight: 700;
   cursor: pointer;
   position: absolute;
-  margin-left: -10rem;
+  margin-left: -9rem;
 }
 @media only screen and (max-width: 75em) {
   .form-inline button {
@@ -158,7 +158,7 @@ li {
   .form-inline button {
     margin-top: 0.5rem;
     padding: 1rem;
-    margin-left: -12rem;
+    margin-left: -10rem;
   }
 }
 @media only screen and (max-width: 37.5em) {
