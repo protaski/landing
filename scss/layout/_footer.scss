@@ -29,7 +29,14 @@ footer svg {
 //mobile
 
 .spacing {
-    margin-bottom: $medium-margin;
+    visibility: hidden;
+    display: none;
+
+    @include respond(phone) {
+        visibility: visible;
+        display: block;
+        margin-bottom: $large-margin;
+    }
 }
 
 .footer__mobile--item {

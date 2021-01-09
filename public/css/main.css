@@ -237,7 +237,15 @@ footer svg {
 }
 
 .spacing {
-  margin-bottom: 4rem;
+  visibility: hidden;
+  display: none;
+}
+@media only screen and (max-width: 37.5em) {
+  .spacing {
+    visibility: visible;
+    display: block;
+    margin-bottom: 8rem;
+  }
 }
 
 .footer__mobile--item {
