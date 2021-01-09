@@ -236,6 +236,10 @@ footer svg {
   cursor: pointer;
 }
 
+.spacing {
+  margin-bottom: 4rem;
+}
+
 .footer__mobile--item {
   visibility: hidden;
   display: none;

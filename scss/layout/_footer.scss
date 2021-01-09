@@ -27,6 +27,11 @@ footer svg {
 }
 
 //mobile
+
+.spacing {
+    margin-bottom: $medium-margin;
+}
+
 .footer__mobile--item {
     visibility: hidden;
     display: none;
@@ -35,6 +40,10 @@ footer svg {
         visibility: visible;
         display: block;
         margin: $small-margin;
+
+        &:last-child {
+            // margin-bottom: $medium-margin;
+        }
     }
 }
 
