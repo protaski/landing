@@ -326,6 +326,24 @@ footer svg {
 }
 
 @media only screen and (max-width: 37.5em) {
+  .protaski-demo {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+.protaski-mobile {
+  visibility: hidden;
+  display: none;
+}
+@media only screen and (max-width: 37.5em) {
+  .protaski-mobile {
+    visibility: visible;
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
   .google-play {
     visibility: hidden;
   }
@@ -368,7 +386,7 @@ footer svg {
   }
 }
 @media only screen and (max-width: 37.5em) {
-  .flex-item-right img:first-child {
+  .flex-item-right img:nth-child(2) {
     width: 90%;
   }
 }

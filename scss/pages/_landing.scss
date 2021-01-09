@@ -38,6 +38,23 @@
     }
 }
 
+.protaski-demo {
+    @include respond(phone) {
+        visibility: hidden;
+        display: none;
+    }
+}
+
+.protaski-mobile {
+    visibility: hidden;
+    display: none;
+
+    @include respond(phone) {
+        visibility: visible;
+        display: block;
+    }
+}
+
 .google-play {
     @include respond(phone) {
         visibility: hidden;
@@ -75,7 +92,7 @@
         margin: auto;
     }
 
-    & img:first-child {
+    & img:nth-child(2) {
         @include respond(phone) {
             width: 90%;
         }
