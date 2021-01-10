@@ -8,7 +8,8 @@ const config = {
 firebase.initializeApp(config);
 
 let contactInfo = firebase.database().ref("info");
-document.querySelector(".form-inline").addEventListener("subscribe", submitForm);
+document.querySelector(".form-inline").addEventListener("submit", submitForm);
+document.querySelector(".form-inline-mobile").addEventListener("submit", submitForm);
 
 function submitForm(e) {
     e.preventDefault();
