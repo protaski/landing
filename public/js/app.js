@@ -6,7 +6,7 @@ const config = {
 
 firebase.initializeApp(config);
 
-let newSubscriber = firebase.database().ref("email subscribers");
+let newSubscriber = firebase.database().ref("email-subscribers");
 document.querySelector(".form-inline").addEventListener("submit", submitForm);
 document.querySelector(".form-inline-mobile").addEventListener("submit", submitForm);
 
@@ -15,7 +15,7 @@ function submitForm(e) {
     let email = document.querySelector(".email").value;
 
     if (email != "") {
-        firebase.database().ref("email subscribers").orderByChild("email").equalTo(email).once("value", snapshot => {
+        firebase.database().ref("email-subscribers").orderByChild("email").equalTo(email).once("value", snapshot => {
             if (snapshot.exists()) {
                 alert("You're already subscribed!");
             } else {
