@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/protaski/landing#readme",
   "dependencies": {
+    "firebase": "^8.2.2",
     "sass": "^1.32.2"
   }
 }

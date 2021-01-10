@@ -1,3 +1,6 @@
+import firebase from "firebase/app";
+import "firebase/analytics";
+
 const config = {
     apiKey: "AIzaSyBAJ3q09DlPGVll6OqhgGKKYMHx8Eme6GU",
     authDomain: "protaski-9.firebaseapp.com",
