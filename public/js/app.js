@@ -6,7 +6,7 @@ const config = {
 
 firebase.initializeApp(config);
 
-let contactInfo = firebase.database().ref("info");
+let contactInfo = firebase.database().ref("emails");
 document.querySelector(".form-inline").addEventListener("submit", submitForm);
 document.querySelector(".form-inline-mobile").addEventListener("submit", submitForm);
 
