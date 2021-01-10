@@ -7,6 +7,19 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "redirects": [{
+        "regex": "/privacy/.*",
+        "destination": "https://protaski.com/privacy",
+        "type": 301
+
+      },
+      {
+        "regex": "/terms/.*",
+        "destination": "https://protaski.com/terms",
+        "type": 301
+
+      }
     ]
   }
 }
