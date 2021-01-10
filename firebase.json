@@ -6,12 +6,20 @@
     "headers": [{
       "source": "**",
       "headers": [{
-          "key": "Content-Security-Policy",
-          "value": "script-src 'self' https://cdn.firebase.com https://*.firebaseio.com; object-src 'self'"
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
         },
         {
           "key": "X-Frame-Options",
-          "value": "SAMEORIGIN"
+          "value": "DENY"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
         }
       ]
     }],
