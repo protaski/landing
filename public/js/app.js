@@ -1,35 +1,26 @@
 const config = {
     apiKey: "AIzaSyBAJ3q09DlPGVll6OqhgGKKYMHx8Eme6GU",
     authDomain: "protaski-9.firebaseapp.com",
+    projectId: "protaski-9",
     databaseURL: "https://protaski-9.firebaseio.com",
     storageBucket: "protaski-9.appspot.com"
 };
 firebase.initializeApp(config);
 
-// Get a reference to the database service
-var database = firebase.database();
+let contactInfo = firebase.database().ref("info");
+document.querySelector(".form-inline").addEventListener("subscribe", submitForm);
 
-document.getElementById('subscribe').addEventListener('click', event => {
-    const leadEmail = document.getElementById('user_email').value;
+function submitForm(e) {
+    e.preventDefault();
+    let email = document.querySelector(".email").value;
+    console.log(email);
+    saveContactInfo(email);
+    document.querySelector(".form-inline").reset();
+}
 
-    if (leadEmail != "") {
-
-        const leadTimestamp = Math.floor(Date.now() / 1000);
-
-        firebase.database().ref('leads').once('value', snapshot => {
-            var totalLeads = snapshot.numChildren();
-            totalLeads++;
-
-            firebase.database().ref('leads').child(totalLeads).set({
-                email: leadEmail,
-                timestamp: leadTimestamp
-            });
-            alert('Subscribed!');
-
-        }, function (error) {
-            console.log(error);
-        });
-    } else {
-        alert('Please fill all the fields.');
-    }
-});
+function saveContactInfo(email) {
+    let newContactInfo = contactInfo.push();
+    newContactInfo.set({
+        email: email,
+    });
+}
