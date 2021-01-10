@@ -6,9 +6,14 @@
     "headers": [{
       "source": "**",
       "headers": [{
-        "key": "X-Frame-Options",
-        "value": "SAMEORIGIN"
-      }]
+          "key": "Content-Security-Policy",
+          "value": "script-src 'self' https://cdn.firebase.com https://*.firebaseio.com; object-src 'self'"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        }
+      ]
     }],
     "ignore": [
       "firebase.json",
