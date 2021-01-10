@@ -31,16 +31,17 @@ function saveSubscriber(email, timestamp) {
 }
 
 // retrieve subscriber
-// let ref = firebase.database().ref("email subscribers");
-// ref.on("value", getData);
+let ref = firebase.database().ref("email subscribers");
+ref.on("value", getData);
 
-// function getData(data) {
-//     let info = data.val();
-//     let keys = Object.keys(info);
+function getData(data) {
+    let info = data.val();
+    let keys = Object.keys(info);
 
-//     for (let i = 0; i < keys.length; i++) {
-//         let i = keys[i]
-//         let timestamp = info[i].timestamp
-//         console.log(timestamp)
-//     }
-// }
+    for (let i = 0; i < keys.length; i++) {
+        let i = keys[i];
+        let email = info[i].email;
+        let timestamp = info[i].timestamp;
+        console.log(email);
+    }
+}
