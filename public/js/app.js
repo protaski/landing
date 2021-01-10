@@ -15,10 +15,16 @@ function submitForm(e) {
     let email = document.querySelector(".email").value;
 
     if (email != "") {
-        const timestamp = Math.floor(Date.now() / 1000);
-
-        saveSubscriber(email, timestamp);
-        document.querySelector(".form-inline").reset();
+        firebase.database().ref("email subscribers").orderByChild("email").equalTo(email).once("value", snapshot => {
+            if (snapshot.exists()) {
+                console.log("User already exists");
+                const email = snapshot.val();
+            } else {
+                const timestamp = Math.floor(Date.now() / 1000);
+                saveSubscriber(email, timestamp);
+                document.querySelector(".form-inline").reset();
+            }
+        });
     }
 }
 
@@ -28,20 +34,4 @@ function saveSubscriber(email, timestamp) {
         email: email,
         timestamp: timestamp
     });
-}
-
-// retrieve subscriber
-let ref = firebase.database().ref("email subscribers");
-ref.on("value", getData);
-
-function getData(data) {
-    let info = data.val();
-    let keys = Object.keys(info);
-
-    for (let i = 0; i < keys.length; i++) {
-        let i = keys[i];
-        let email = info[i].email;
-        let timestamp = info[i].timestamp;
-        console.log(email);
-    }
 }
