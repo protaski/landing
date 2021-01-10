@@ -6,7 +6,7 @@ const config = {
 
 firebase.initializeApp(config);
 
-let contactInfo = firebase.database().ref("email subscribers");
+let newSubscriber = firebase.database().ref("email subscribers");
 document.querySelector(".form-inline").addEventListener("submit", submitForm);
 document.querySelector(".form-inline-mobile").addEventListener("submit", submitForm);
 
@@ -17,15 +17,30 @@ function submitForm(e) {
     if (email != "") {
         const timestamp = Math.floor(Date.now() / 1000);
 
-        saveContactInfo(email, timestamp);
+        saveSubscriber(email, timestamp);
         document.querySelector(".form-inline").reset();
     }
 }
 
-function saveContactInfo(email, timestamp) {
-    let newContactInfo = contactInfo.push();
-    newContactInfo.set({
+function saveSubscriber(email, timestamp) {
+    let newSubscriberInfo = newSubscriber.push();
+    newSubscriberInfo.set({
         email: email,
         timestamp: timestamp
     });
 }
+
+// retrieve subscriber
+// let ref = firebase.database().ref("email subscribers");
+// ref.on("value", getData);
+
+// function getData(data) {
+//     let info = data.val();
+//     let keys = Object.keys(info);
+
+//     for (let i = 0; i < keys.length; i++) {
+//         let i = keys[i]
+//         let timestamp = info[i].timestamp
+//         console.log(timestamp)
+//     }
+// }
