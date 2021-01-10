@@ -17,8 +17,7 @@ function submitForm(e) {
     if (email != "") {
         firebase.database().ref("email subscribers").orderByChild("email").equalTo(email).once("value", snapshot => {
             if (snapshot.exists()) {
-                console.log("User already exists");
-                const email = snapshot.val();
+                alert("You're already subscribed!");
             } else {
                 const timestamp = Math.floor(Date.now() / 1000);
                 saveSubscriber(email, timestamp);
