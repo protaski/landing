@@ -1,8 +1,9 @@
 {
   "rules": {
-    "protaski-9": {
-      ".read": true,
-      ".write": true
+    ".read": true,
+    ".write": true,
+    "email-subscribers": {
+      ".indexOn": "email"
     }
   }
 }
