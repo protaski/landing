@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Make Friends, Language Exchange, Goal Setting | Protaski</title>
   <link rel="stylesheet" href="css/main.css" />
+  <script defer src="/__/firebase/8.2.2/firebase-database.js"></script>
   <link rel=“canonical” href=“https://protaski.com” />
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -337,8 +338,8 @@
             <p>Waiting for iOS?</p>
           </div>
           <form class="form-inline">
-            <input type="email" id="email" placeholder="Email" name="email">
-            <button type="submit" id="subscribe-email">Subscribe</button>
+            <input type="email" id="user_email" placeholder="Email" name="email">
+            <button type="submit" id="subscribe">Subscribe</button>
           </form>
           <a href="http://bit.ly/3nnxk2L">
             <img src="./img/google-play.webp" alt="Install Protaski on Google Play" class="google-play"></a>
@@ -353,8 +354,8 @@
           <p>Waiting for iOS?</p>
         </div>
         <form class="form-inline-mobile">
-          <input type="email" id="email" placeholder="Email" name="email">
-          <button type="submit">Subscribe</button>
+          <input type="email" id="user_email" placeholder="Email" name="email">
+          <button type="submit" id="subscribe">Subscribe</button>
         </form>
         <div class="footer__mobile--item"><a href="./privacy.html">
             <p>Privacy</p>
@@ -505,6 +506,7 @@
       <p>© 2021 // Protaski LLC</p>
     </div>
   </footer>
+  <script src="./js/app.js"></script>
 </body>
 
 </html>
