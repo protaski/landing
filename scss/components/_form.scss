@@ -38,6 +38,10 @@
     @include respond(phone) {
         visibility: hidden;
     }
+
+    &:active {
+        color: $color-orange-peel;
+    }
 }
 
 textarea:focus,
@@ -77,6 +81,6 @@ input:focus {
         width: 32rem;
         font-weight: 700;
         cursor: pointer;
-        margin-bottom: $large-margin
+        margin-bottom: $large-margin;
     }
 }

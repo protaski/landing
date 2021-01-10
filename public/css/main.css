@@ -167,6 +167,9 @@ li {
     visibility: hidden;
   }
 }
+.form-inline button:active {
+  color: #FF9D00;
+}
 
 textarea:focus,
 input:focus {

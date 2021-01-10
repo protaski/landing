@@ -6,20 +6,26 @@ const config = {
 
 firebase.initializeApp(config);
 
-let contactInfo = firebase.database().ref("emails");
+let contactInfo = firebase.database().ref("email subscribers");
 document.querySelector(".form-inline").addEventListener("submit", submitForm);
 document.querySelector(".form-inline-mobile").addEventListener("submit", submitForm);
 
 function submitForm(e) {
     e.preventDefault();
     let email = document.querySelector(".email").value;
-    saveContactInfo(email);
-    document.querySelector(".form-inline").reset();
+
+    if (email != "") {
+        const timestamp = Math.floor(Date.now() / 1000);
+
+        saveContactInfo(email, timestamp);
+        document.querySelector(".form-inline").reset();
+    }
 }
 
-function saveContactInfo(email) {
+function saveContactInfo(email, timestamp) {
     let newContactInfo = contactInfo.push();
     newContactInfo.set({
         email: email,
+        timestamp: timestamp
     });
 }
