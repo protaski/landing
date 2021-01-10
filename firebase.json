@@ -6,6 +6,9 @@
     "headers": [{
       "source": "**",
       "headers": [{
+          "key": "Content-Security-Policy-Report-Only",
+          "value": "default-src 'self'; script-src 'report-sample' 'self'; style-src 'report-sample' 'self' https://fonts.googleapis.com; object-src 'none'; base-uri 'self'; connect-src 'self'; font-src 'self' https://fonts.gstatic.com; frame-src 'self'; img-src 'self'; manifest-src 'self'; media-src 'self'; report-uri https://5ffa8a73937fe147894b833d.endpoint.csper.io/; worker-src 'none';"
+        }, {
           "key": "Access-Control-Allow-Origin",
           "value": "*"
         },
