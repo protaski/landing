@@ -11,6 +11,8 @@
 }
 
 .protaski-logo {
+    cursor: default;
+
     @include respond(phone) {
         margin-top: 20rem;
     }

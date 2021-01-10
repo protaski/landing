@@ -22,6 +22,7 @@
     cursor: pointer;
     position: absolute;
     margin-left: -10rem;
+    outline: none;
 
     @include respond(tab-land) {
         margin-top: .2rem;

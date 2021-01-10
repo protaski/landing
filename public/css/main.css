@@ -147,6 +147,7 @@ li {
   cursor: pointer;
   position: absolute;
   margin-left: -10rem;
+  outline: none;
 }
 @media only screen and (max-width: 75em) {
   .form-inline button {
@@ -295,6 +296,9 @@ footer svg {
   }
 }
 
+.protaski-logo {
+  cursor: default;
+}
 @media only screen and (max-width: 37.5em) {
   .protaski-logo {
     margin-top: 20rem;
