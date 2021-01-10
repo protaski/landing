@@ -24,6 +24,17 @@
         margin-left: $medium-margin;
         margin-right: $medium-margin;
     }
+
+    & h1 {
+        font-size: $default-font-size;
+        font-weight: 300;
+        margin: 0;
+
+        @include respond(phone) {
+            font-size: $medium-font-size;
+            line-height: $medium-line-height;
+        }
+    }
 }
 
 .subscribe p {

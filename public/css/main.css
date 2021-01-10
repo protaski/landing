@@ -311,6 +311,17 @@ footer svg {
     margin-right: 4rem;
   }
 }
+.description h1 {
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin: 0;
+}
+@media only screen and (max-width: 37.5em) {
+  .description h1 {
+    font-size: 2.4rem;
+    line-height: 4rem;
+  }
+}
 
 .subscribe p {
   color: #F9F9F9;
