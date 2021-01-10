@@ -21,7 +21,7 @@
     font-weight: 700;
     cursor: pointer;
     position: absolute;
-    margin-left: -9rem;
+    margin-left: -10rem;
 
     @include respond(tab-land) {
         margin-top: .2rem;
