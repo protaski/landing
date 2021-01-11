@@ -20,6 +20,8 @@ function webForm(e) {
             } else {
                 const timestamp = Math.floor(Date.now() / 1000);
                 saveSubscriber(email, timestamp);
+                let webSubscriberConfirmed = document.getElementById("form-confirmation");
+                webSubscriberConfirmed.style.visibility = "visible";
                 document.querySelector(".form-inline").reset();
             }
         });
@@ -32,10 +34,12 @@ function mobileForm(e) {
     if (email != "") {
         firebase.database().ref("subscribers").orderByChild("email").equalTo(email).once("value", snapshot => {
             if (snapshot.exists()) {
-                alert("You're already subscribed!");
+                alert("You've already subscribed!");
             } else {
                 const timestamp = Math.floor(Date.now() / 1000);
                 saveSubscriber(email, timestamp);
+                let mobileSubscriberConfirmed = document.getElementById("form-confirmation-mobile");
+                mobileSubscriberConfirmed.style.visibility = "visible";
                 document.querySelector(".form-inline-mobile").reset();
             }
         });

@@ -175,17 +175,17 @@ input:focus {
   outline: none;
 }
 
-.form-confirmation {
+#form-confirmation {
   visibility: hidden;
   margin-top: 0.6rem;
   margin-bottom: 1rem;
   color: #7ed321;
 }
-.form-confirmation p {
+#form-confirmation p {
   font-size: 1.4rem;
 }
 @media only screen and (max-width: 37.5em) {
-  .form-confirmation {
+  #form-confirmation {
     visibility: hidden;
     display: none;
   }
@@ -228,12 +228,12 @@ input:focus {
   }
 }
 
-.form-confirmation-mobile {
+#form-confirmation-mobile {
   visibility: hidden;
   display: none;
 }
 @media only screen and (max-width: 37.5em) {
-  .form-confirmation-mobile {
+  #form-confirmation-mobile {
     visibility: hidden;
     display: block;
     margin-top: 2rem;
@@ -243,7 +243,7 @@ input:focus {
     padding: 1.2rem;
     border-radius: 6rem;
   }
-  .form-confirmation-mobile p {
+  #form-confirmation-mobile p {
     font-size: 1.8rem;
   }
 }

@@ -48,7 +48,7 @@ input:focus {
     outline: none;
 }
 
-.form-confirmation {
+#form-confirmation {
     visibility: hidden;
     margin-top: $xsmall-margin;
     margin-bottom: $small-margin;
@@ -100,7 +100,7 @@ input:focus {
     }
 }
 
-.form-confirmation-mobile {
+#form-confirmation-mobile {
     visibility: hidden;
     display: none;
 
