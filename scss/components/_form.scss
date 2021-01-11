@@ -78,6 +78,7 @@ input:focus {
         border: none;
         font-family: $montserrat;
         width: 32rem;
+        border-radius: 0rem;
     }
 }
 
@@ -96,7 +97,6 @@ input:focus {
         width: 32rem;
         font-weight: 700;
         cursor: pointer;
-        border-radius: 0rem;
     }
 }
 
