@@ -6,7 +6,7 @@ const config = {
 
 firebase.initializeApp(config);
 
-let emailSubscriber = firebase.database().ref("subscribers");
+let emailSubscriber = firebase.database().ref("email-subscribers");
 document.querySelector(".form-inline").addEventListener("submit", webForm);
 document.querySelector(".form-inline-mobile").addEventListener("submit", mobileForm);
 
@@ -14,7 +14,7 @@ function webForm(e) {
     e.preventDefault();
     let email = document.getElementById("web-email").value;
     if (email != "") {
-        firebase.database().ref("subscribers").orderByChild("email").equalTo(email).once("value", snapshot => {
+        firebase.database().ref("email-subscribers").orderByChild("email").equalTo(email).once("value", snapshot => {
             if (snapshot.exists()) {
                 alert("You're already subscribed!");
             } else {
@@ -32,7 +32,7 @@ function mobileForm(e) {
     e.preventDefault();
     let email = document.getElementById("mobile-email").value;
     if (email != "") {
-        firebase.database().ref("subscribers").orderByChild("email").equalTo(email).once("value", snapshot => {
+        firebase.database().ref("email-subscribers").orderByChild("email").equalTo(email).once("value", snapshot => {
             if (snapshot.exists()) {
                 alert("You've already subscribed!");
             } else {
