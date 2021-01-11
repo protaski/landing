@@ -127,7 +127,6 @@ li {
   padding: 1.6rem;
   background-color: #F9F9F9;
   border: none;
-  margin-bottom: 4rem;
   font-family: "Montserrat", sans-serif;
   width: 32rem;
 }
@@ -176,6 +175,22 @@ input:focus {
   outline: none;
 }
 
+.form-confirmation {
+  visibility: hidden;
+  margin-top: 0.6rem;
+  margin-bottom: 1rem;
+  color: #7ed321;
+}
+.form-confirmation p {
+  font-size: 1.4rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .form-confirmation {
+    visibility: hidden;
+    display: none;
+  }
+}
+
 .form-inline-mobile input {
   visibility: hidden;
   display: none;
@@ -209,7 +224,27 @@ input:focus {
     width: 32rem;
     font-weight: 700;
     cursor: pointer;
+    border-radius: 0rem;
+  }
+}
+
+.form-confirmation-mobile {
+  visibility: hidden;
+  display: none;
+}
+@media only screen and (max-width: 37.5em) {
+  .form-confirmation-mobile {
+    visibility: hidden;
+    display: block;
+    margin-top: 2rem;
     margin-bottom: 8rem;
+    color: #3B1195;
+    background-color: #F9F9F9;
+    padding: 1.2rem;
+    border-radius: 6rem;
+  }
+  .form-confirmation-mobile p {
+    font-size: 1.8rem;
   }
 }
 

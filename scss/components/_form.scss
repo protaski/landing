@@ -3,7 +3,6 @@
     padding: $small-padding;
     background-color: $color-cultured;
     border: none;
-    margin-bottom: $medium-margin;
     font-family: $montserrat;
     width: 32rem;
 
@@ -49,6 +48,22 @@ input:focus {
     outline: none;
 }
 
+.form-confirmation {
+    visibility: hidden;
+    margin-top: $xsmall-margin;
+    margin-bottom: $small-margin;
+    color: $color-sheen-green;
+
+    & p {
+        font-size: $small-font-size;
+    }
+
+    @include respond(phone) {
+        visibility: hidden;
+        display: none;
+    }
+}
+
 // mobile
 .form-inline-mobile input {
     visibility: hidden;
@@ -81,7 +96,26 @@ input:focus {
         width: 32rem;
         font-weight: 700;
         cursor: pointer;
-        margin-bottom: $large-margin;
         border-radius: 0rem;
+    }
+}
+
+.form-confirmation-mobile {
+    visibility: hidden;
+    display: none;
+
+    @include respond(phone) {
+        visibility: hidden;
+        display: block;
+        margin-top: $default-margin;
+        margin-bottom: $large-margin;
+        color: $color-persian-indigo;
+        background-color: $color-cultured;
+        padding: $xsmall-padding;
+        border-radius: 6rem;
+
+        & p {
+            font-size: $default-font-size;
+        }
     }
 }
