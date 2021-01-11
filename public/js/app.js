@@ -6,16 +6,15 @@ const config = {
 
 firebase.initializeApp(config);
 
-let newSubscriber = firebase.database().ref("email-subscribers");
-document.querySelector(".form-inline").addEventListener("submit", submitForm);
-document.querySelector(".form-inline-mobile").addEventListener("submit", submitForm);
+let emailSubscriber = firebase.database().ref("subscribers");
+document.querySelector(".form-inline").addEventListener("submit", webForm);
+document.querySelector(".form-inline-mobile").addEventListener("submit", mobileForm);
 
-function submitForm(e) {
+function webForm(e) {
     e.preventDefault();
-    let email = document.querySelector(".email").value;
-
+    let email = document.getElementById("web-email").value;
     if (email != "") {
-        firebase.database().ref("email-subscribers").orderByChild("email").equalTo(email).once("value", snapshot => {
+        firebase.database().ref("subscribers").orderByChild("email").equalTo(email).once("value", snapshot => {
             if (snapshot.exists()) {
                 alert("You're already subscribed!");
             } else {
@@ -27,8 +26,24 @@ function submitForm(e) {
     }
 }
 
+function mobileForm(e) {
+    e.preventDefault();
+    let email = document.getElementById("mobile-email").value;
+    if (email != "") {
+        firebase.database().ref("subscribers").orderByChild("email").equalTo(email).once("value", snapshot => {
+            if (snapshot.exists()) {
+                alert("You're already subscribed!");
+            } else {
+                const timestamp = Math.floor(Date.now() / 1000);
+                saveSubscriber(email, timestamp);
+                document.querySelector(".form-inline-mobile").reset();
+            }
+        });
+    }
+}
+
 function saveSubscriber(email, timestamp) {
-    let newSubscriberInfo = newSubscriber.push();
+    let newSubscriberInfo = emailSubscriber.push();
     newSubscriberInfo.set({
         email: email,
         timestamp: timestamp

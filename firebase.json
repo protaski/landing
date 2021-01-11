@@ -30,7 +30,6 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**",
-      "database.rules.json"
     ],
     "redirects": [{
         "regex": "/privacy/.*",

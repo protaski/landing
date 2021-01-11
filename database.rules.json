@@ -1,9 +1,6 @@
 {
   "rules": {
     ".read": true,
-    ".write": true,
-    "email-subscribers": {
-      ".indexOn": "email"
-    }
+    ".write": true
   }
 }
