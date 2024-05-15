@@ -8,5 +8,8 @@
   "keywords": [],
   "author": "Protaski LLC",
   "license": "ISC",
-  "description": "Protaski's landing page"
+  "description": "Protaski's landing page",
+  "devDependencies": {
+    "eslint": "^9.2.0"
+  }
 }
