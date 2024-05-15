@@ -5,7 +5,7 @@
   "scripts": {
     "lint": "eslint ."
   },
-  "keywords": [],
+  "keywords": ["anonymity"],
   "author": "Protaski LLC",
   "license": "ISC",
   "description": "Protaski's landing page",

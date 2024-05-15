@@ -1,89 +1,139 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D7GNB4GG87"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/10.12.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/10.12.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/10.12.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/10.12.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/10.12.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/10.12.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/10.12.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/10.12.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/10.12.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/10.12.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+  gtag('config', 'G-D7GNB4GG87');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protaski - Internet Without Boundaries</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: 'Arial', 'Helvetica', sans-serif; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #4B0606;
         }
-      });
-    </script>
-  </body>
+        .container {
+            padding: 2rem;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .logo {
+            margin: 1rem;
+        }
+        h2 {
+            font-size: 1.5rem;
+            color: #555;
+        }
+        p {
+            font-size: 1rem;
+            color: #666;
+            margin-right: 2rem;
+            margin-left: 2rem;
+            line-height: 1.5;
+        }
+        .social {
+            margin-top: 2rem;
+            font-size: 2rem;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+        .social a {
+            color: #4B0606;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .social a:hover {
+            color: #862828;
+        }
+        .social-links svg {
+            margin-right: 0.5rem;
+        }
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <svg width="270" height="64" viewBox="0 0 270 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.4922 15.8446C15.8525 15.8446 12.1149 17.3283 9.6017 20.3601V16.3606H0V63.5806H10.0528V47.3891C12.6304 50.2274 16.1747 51.5821 20.4922 51.5821C30.2228 51.5821 37.7624 44.6152 37.7624 33.7133C37.7624 22.8115 30.2228 15.8446 20.4922 15.8446ZM18.7523 43.3251C13.7259 43.3251 9.9239 39.7126 9.9239 33.7133C9.9239 27.7141 13.7259 24.1016 18.7523 24.1016C23.7787 24.1016 27.5807 27.7141 27.5807 33.7133C27.5807 39.7126 23.7787 43.3251 18.7523 43.3251Z" fill="#862828"/>
+                <path d="M54.0936 20.9407V16.3606H44.4919V51.066H54.5447V34.681C54.5447 28.0366 58.2178 25.0047 63.7598 25.0047C64.533 25.0047 65.1774 25.0692 66.0152 25.1337V15.8446C60.6666 15.8446 56.5424 17.5863 54.0936 20.9407Z" fill="#862828"/>
+                <path d="M133.559 42.2929C132.463 43.1315 130.981 43.5831 129.499 43.5831C126.793 43.5831 125.182 41.9704 125.182 39.003V24.8757H133.817V17.1347H125.182V8.68416H115.129V17.1347H109.78V24.8757H115.129V39.132C115.129 47.3891 119.897 51.5821 128.081 51.5821C131.175 51.5821 134.203 50.8725 136.265 49.3888L133.559 42.2929Z" fill="#862828"/>
+                <path d="M155.892 15.8446C150.35 15.8446 144.744 17.3283 140.942 20.0376L144.551 27.069C147.064 25.0692 150.866 23.8436 154.539 23.8436C159.952 23.8436 162.53 26.3594 162.53 30.6815H154.539C143.971 30.6815 139.653 34.939 139.653 41.0673C139.653 47.0665 144.486 51.5821 152.606 51.5821C157.696 51.5821 161.305 49.9049 163.174 46.744V51.066H172.582V31.262C172.582 20.7472 166.46 15.8446 155.892 15.8446ZM155.119 44.8088C151.575 44.8088 149.448 43.1315 149.448 40.6157C149.448 38.2934 150.93 36.5517 155.634 36.5517H162.53V40.0997C161.37 43.2606 158.47 44.8088 155.119 44.8088Z" fill="#862828"/>
+                <path d="M193.344 51.5821C203.719 51.5821 209.712 47.002 209.712 40.5512C209.712 26.8755 188.769 32.6167 188.769 26.6819C188.769 24.8757 190.702 23.4565 195.213 23.4565C198.371 23.4565 201.786 24.1016 205.202 26.0369L208.552 18.8765C205.266 16.9412 199.982 15.8446 195.213 15.8446C185.096 15.8446 179.167 20.4892 179.167 27.069C179.167 40.9383 200.111 35.1325 200.111 40.8092C200.111 42.7445 198.371 43.9701 193.731 43.9701C189.478 43.9701 184.774 42.6155 181.681 40.6157L178.33 47.8406C181.552 49.9694 187.48 51.5821 193.344 51.5821Z" fill="#862828"/>
+                <path d="M241.756 51.066H253.935L238.211 31.0685L252.646 16.3606H240.66L225.968 30.2944V3.20097H215.915V51.066H225.968V42.2284L230.801 37.4548L241.756 51.066Z" fill="#862828"/>
+                <path d="M258.204 51.066H268.257V16.3606H258.204V51.066Z" fill="#862828"/>
+                <path d="M267 0H258.5L255.808 3.97688L262.904 12.9914L270 3.97688L267 0Z" fill="#862828"/>
+                <path d="M102.355 27.4763H104.751V25.0784H72.9632V28.9428H77.0084C77.5632 28.9428 78.0129 29.3859 78.0129 29.9325C78.0129 30.4791 77.5632 30.9222 77.0084 30.9222H72.9632V36.8604H74.4935C75.0482 36.8604 75.498 37.3035 75.498 37.8501C75.498 38.3967 75.0482 38.8398 74.4935 38.8398H72.9632V44.8536H75.9125C76.4672 44.8536 76.917 45.2967 76.917 45.8433C76.917 46.3899 76.4672 46.833 75.9125 46.833H72.9632V50.75H104.751V46.8234H103.102C102.547 46.8234 102.097 46.3803 102.097 45.8337C102.097 45.2871 102.547 44.844 103.102 44.844H104.751V40.498H101.685C101.131 40.498 100.681 40.0549 100.681 39.5083C100.681 38.9617 101.131 38.5186 101.685 38.5186H104.751V29.4557H102.355C101.8 29.4557 101.351 29.0126 101.351 28.466C101.351 27.9194 101.8 27.4763 102.355 27.4763ZM98.9804 50.7431H78.7339V38.2506C78.7339 34.8985 80.5107 31.8041 83.371 30.1749L88.1061 27.4778C88.5707 27.2131 89.1436 27.2131 89.6082 27.4778L94.3433 30.1749C97.2036 31.8041 98.9804 34.8985 98.9804 38.2506V50.7431Z" fill="#862828"/>
+                <path d="M105.006 17.0005H102.702C102.147 17.0005 101.697 17.4758 101.697 18.0224V20.1912H95.9404V18.0224C95.9404 17.4758 95.4906 17.0005 94.9359 17.0005H92.7075C92.1527 17.0005 91.703 17.4758 91.703 18.0224V20.1912H85.9461V18.0224C85.9461 17.4758 85.5302 17 84.9754 17H82.747C82.1923 17 81.7087 17.4758 81.7087 18.0224V20.1912H75.9518V18.0224C75.9518 17.4758 75.5021 17.0005 74.9473 17.0005H72.7188C72.164 17.0005 71.7143 17.4758 71.7143 18.0224V23.099H106V18.0138C105.995 17.4706 105.557 17.0005 105.006 17.0005Z" fill="#862828"/>
+                <path d="M85.1741 48.2845H87.8527V50.7431H85.1741V48.2845Z" fill="#862828"/>
+                <path d="M85.1741 34.4288H87.8527V37.068H85.1741V34.4288Z" fill="#862828"/>
+                <path d="M87.8527 29.9084L85.1741 31.4342V32.4494H87.8527V29.9084Z" fill="#862828"/>
+                <path d="M85.1741 39.0474H87.8527V41.6865H85.1741V39.0474Z" fill="#862828"/>
+                <path d="M85.1741 43.6659H87.8527V46.3051H85.1741V43.6659Z" fill="#862828"/>
+                <path d="M80.7428 43.6659H83.1652V46.3051H80.7428V43.6659Z" fill="#862828"/>
+                <path d="M89.8616 39.0474H92.5402V41.6865H89.8616V39.0474Z" fill="#862828"/>
+                <path d="M89.8616 43.6659H92.5402V46.3051H89.8616V43.6659Z" fill="#862828"/>
+                <path d="M89.8616 34.4288H92.5402V37.068H89.8616V34.4288Z" fill="#862828"/>
+                <path d="M92.5402 31.4342L89.8616 29.9084V32.4494H92.5402V31.4342Z" fill="#862828"/>
+                <path d="M83.1652 37.068V34.4288H81.7943C81.3156 35.229 80.9873 36.1243 80.8369 37.068H83.1652Z" fill="#862828"/>
+                <path d="M80.7428 39.0474H83.1652V41.6865H80.7428V39.0474Z" fill="#862828"/>
+                <path d="M80.7428 48.2845H83.1652V50.7431H80.7428V48.2845Z" fill="#862828"/>
+                <path d="M94.5491 48.2845H96.9715V50.7431H94.5491V48.2845Z" fill="#862828"/>
+                <path d="M94.5491 39.0474H96.9715V41.6865H94.5491V39.0474Z" fill="#862828"/>
+                <path d="M94.5491 43.6659H96.9715V46.3051H94.5491V43.6659Z" fill="#862828"/>
+                <path d="M94.5491 37.068H96.8774C96.727 36.1243 96.3987 35.229 95.92 34.4288H94.5491V37.068Z" fill="#862828"/>
+                <path d="M89.8616 48.2845H92.5402V50.7431H89.8616V48.2845Z" fill="#862828"/>
+                <path d="M100.641 27.4763H103.037V25.0784H71.2489V28.9428H75.2941C75.8489 28.9428 76.2986 29.3859 76.2986 29.9325C76.2986 30.4791 75.8489 30.9222 75.2941 30.9222H71.2489V36.8604H72.7792C73.334 36.8604 73.7837 37.3035 73.7837 37.8501C73.7837 38.3967 73.334 38.8398 72.7792 38.8398H71.2489V44.8536H74.1982C74.7529 44.8536 75.2027 45.2967 75.2027 45.8433C75.2027 46.3899 74.7529 46.833 74.1982 46.833H71.2489V50.75H103.037V46.8234H101.387C100.833 46.8234 100.383 46.3803 100.383 45.8337C100.383 45.2871 100.833 44.844 101.387 44.844H103.037V40.498H99.9712C99.4165 40.498 98.9667 40.0549 98.9667 39.5083C98.9667 38.9617 99.4165 38.5186 99.9712 38.5186H103.037V29.4557H100.641C100.086 29.4557 99.6364 29.0126 99.6364 28.466C99.6364 27.9194 100.086 27.4763 100.641 27.4763ZM97.2661 50.7431H77.0196V38.2506C77.0196 34.8985 78.7964 31.8041 81.6567 30.1749L86.3918 27.4778C86.8564 27.2131 87.4293 27.2131 87.8939 27.4778L92.629 30.1749C95.4893 31.8041 97.2661 34.8985 97.2661 38.2506V50.7431Z" fill="#4B0606"/>
+                <path d="M103.291 17.0005H100.987C100.433 17.0005 99.983 17.4758 99.983 18.0224V20.1912H94.2261V18.0224C94.2261 17.4758 93.7763 17.0005 93.2216 17.0005H90.9932C90.4384 17.0005 89.9887 17.4758 89.9887 18.0224V20.1912H84.2318V18.0224C84.2318 17.4758 83.8159 17 83.2611 17H81.0327C80.478 17 79.9944 17.4758 79.9944 18.0224V20.1912H74.2375V18.0224C74.2375 17.4758 73.7878 17.0005 73.233 17.0005H71.0045C70.4497 17.0005 70 17.4758 70 18.0224V23.099H104.286V18.0138C104.281 17.4706 103.843 17.0005 103.291 17.0005Z" fill="#4B0606"/>
+                <path d="M83.4598 48.2845H86.1384V50.7431H83.4598V48.2845Z" fill="#4B0606"/>
+                <path d="M83.4598 34.4288H86.1384V37.068H83.4598V34.4288Z" fill="#4B0606"/>
+                <path d="M86.1384 29.9084L83.4598 31.4342V32.4494H86.1384V29.9084Z" fill="#4B0606"/>
+                <path d="M83.4598 39.0474H86.1384V41.6865H83.4598V39.0474Z" fill="#4B0606"/>
+                <path d="M83.4598 43.6659H86.1384V46.3051H83.4598V43.6659Z" fill="#4B0606"/>
+                <path d="M79.0285 43.6659H81.4509V46.3051H79.0285V43.6659Z" fill="#4B0606"/>
+                <path d="M88.1473 39.0474H90.8259V41.6865H88.1473V39.0474Z" fill="#4B0606"/>
+                <path d="M88.1473 43.6659H90.8259V46.3051H88.1473V43.6659Z" fill="#4B0606"/>
+                <path d="M88.1473 34.4288H90.8259V37.068H88.1473V34.4288Z" fill="#4B0606"/>
+                <path d="M90.8259 31.4342L88.1473 29.9084V32.4494H90.8259V31.4342Z" fill="#4B0606"/>
+                <path d="M81.4509 37.068V34.4288H80.08C79.6013 35.229 79.273 36.1243 79.1226 37.068H81.4509Z" fill="#4B0606"/>
+                <path d="M79.0285 39.0474H81.4509V41.6865H79.0285V39.0474Z" fill="#4B0606"/>
+                <path d="M79.0285 48.2845H81.4509V50.7431H79.0285V48.2845Z" fill="#4B0606"/>
+                <path d="M92.8348 48.2845H95.2572V50.7431H92.8348V48.2845Z" fill="#4B0606"/>
+                <path d="M92.8348 39.0474H95.2572V41.6865H92.8348V39.0474Z" fill="#4B0606"/>
+                <path d="M92.8348 43.6659H95.2572V46.3051H92.8348V43.6659Z" fill="#4B0606"/>
+                <path d="M92.8348 37.068H95.1631C95.0127 36.1243 94.6844 35.229 94.2057 34.4288H92.8348V37.068Z" fill="#4B0606"/>
+                <path d="M88.1473 48.2845H90.8259V50.7431H88.1473V48.2845Z" fill="#4B0606"/>
+                </svg>                                                        
+        </div>
+        <h2>Internet Without Boundaries</h2>
+        <p>An exclusive service for those who value privacy and freedom online. Join our limited community and experience the internet without boundaries.</p>
+        <div class="social">
+            <a href="https://discord.gg/YOUR_DISCORD_INVITE_CODE" target="_blank">
+                <i class="fab fa-discord"></i>
+            </a>
+            <a href="https://www.instagram.com/protaski" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/YOUR_FACEBOOK_PROFILE" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+        </div>
+    </div>
+</body>
 </html>
