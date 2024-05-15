@@ -15,11 +15,11 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '20'
-
+          
       - name: Install dependencies
         run: npm install
 
-        - name: Save Firebase service account key
+      - name: Save Firebase service account key
         id: auth
         run: |
           echo "${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}" > $HOME/firebase-key.json
