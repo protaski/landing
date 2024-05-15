@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "npm ci && npm run build"
+    "deploy": "npm ci && npm run build"
   },
   "keywords": [],
   "author": "Protaski LLC",
