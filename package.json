@@ -1,0 +1,12 @@
+{
+  "name": "landing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm ci && npm run build"
+  },
+  "keywords": [],
+  "author": "Protaski LLC",
+  "license": "ISC",
+  "description": "Protaski's landing page"
+}
