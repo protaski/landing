@@ -30,9 +30,9 @@ jobs:
 
       - name: Print environment variables
         run: printenv
-        
+
       - name: Deploy to Firebase
         env:
-          GOOGLE_APPLICATION_CREDENTIALS: ${{ runner.temp }}/firebase-key.json
+          GOOGLE_APPLICATION_CREDENTIALS: $HOME/firebase-key.json
         run: firebase deploy --only hosting
-
+        working-directory: ${{ github.workspace }}
