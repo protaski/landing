@@ -3,15 +3,16 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint ."
+    "prettify": "prettier --write 'public/*.html'",
+    "check-format": "prettier --check '**/*.html'"
   },
-  "keywords": ["anonymity"],
+  "keywords": [
+    "anonymity"
+  ],
   "author": "Protaski LLC",
   "license": "ISC",
   "description": "Protaski's landing page",
   "devDependencies": {
-    "@eslint/js": "^9.2.0",
-    "eslint": "^9.2.0",
-    "globals": "^15.2.0"
+    "prettier": "^3.2.5"
   }
 }

@@ -1,0 +1,8 @@
+{
+    "htmlWhitespaceSensitivity": "css",
+    "endOfLine": "lf",
+    "semi": false,
+    "singleQuote": true,
+    "tabWidth": 4,
+    "useTabs": false
+}  
