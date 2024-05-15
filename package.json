@@ -3,13 +3,15 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "deploy": "npm ci && npm run build"
+    "lint": "eslint ."
   },
   "keywords": [],
   "author": "Protaski LLC",
   "license": "ISC",
   "description": "Protaski's landing page",
   "devDependencies": {
-    "eslint": "^9.2.0"
+    "@eslint/js": "^9.2.0",
+    "eslint": "^9.2.0",
+    "globals": "^15.2.0"
   }
 }
