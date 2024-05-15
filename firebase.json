@@ -1,27 +1,48 @@
 {
   "hosting": {
     "public": "public",
+    "cleanUrls": true,
+    "trailingSlash": false,
+    "headers": [{
+      "source": "**",
+      "headers": [{
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "max-age=30672000"
+        }
+      ]
+    }],
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
     ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
+    "redirects": [{
+        "regex": "/privacy/.*",
+        "destination": "https://protaski.com/privacy",
+        "type": 301
+
       },
       {
-        "source": "/privacy",
-        "destination": "/privacy.html"
-      },
-      {
-        "source": "/terms",
-        "destination": "/terms.html"
-      },
-      {
-        "source": "**",
-        "destination": "/404.html"
+        "regex": "/terms/.*",
+        "destination": "https://protaski.com/terms",
+        "type": 301
+
       }
     ]
   }
