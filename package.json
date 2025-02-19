@@ -7,7 +7,7 @@
     "check-format": "prettier --check '**/*.html'"
   },
   "keywords": [
-    "anonymity"
+    "anonymity", "vpn", "china", "privacy"
   ],
   "author": "Protaski LLC",
   "license": "ISC",
