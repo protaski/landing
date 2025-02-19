@@ -14,5 +14,8 @@
   "description": "Protaski's landing page",
   "devDependencies": {
     "prettier": "^3.2.5"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7"
   }
 }
