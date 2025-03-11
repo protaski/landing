@@ -18,68 +18,49 @@
 
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Protaski - Unblock the Internet. Stay Private in China.</title>
+        <link rel="manifest" href="/site.webmanifest" />
+        <meta
+            name="description"
+            content="Protaski is a premium VPN service designed for China. Stay private, secure, and fast with WireGuard to bypass strict censorship."
+        />
+        <meta
+            name="keywords"
+            content="Protaski, VPN, China, Internet Freedom, Privacy, Secure, WireGuard"
+        />
+        <meta name="robots" content="index,follow" />
+        <meta
+            property="og:title"
+            content="Protaski - Unblock the Internet. Stay Private in China."
+        />
+        <meta
+            property="og:description"
+            content="Unblock the Internet. Stay Private in China using Protaski VPN."
+        />
+        <!-- <meta
+            property="og:image"
+            content="https://protaski.com/images/protaski-feature.jpg"
+        /> -->
+        <meta property="og:url" content="https://protaski.com" />
+        <meta property="og:type" content="website" />
         <link
             rel="apple-touch-icon"
             sizes="180x180"
-            href="/apple-touch-icon.png"
+            href="./apple-touch-icon.png"
         />
         <link
             rel="icon"
             type="image/png"
             sizes="32x32"
-            href="/favicon-32x32.png"
+            href="./favicon-32x32.png"
         />
         <link
             rel="icon"
             type="image/png"
             sizes="16x16"
-            href="/favicon-16x16.png"
+            href="./favicon-16x16.png"
         />
-        <link rel="manifest" href="/site.webmanifest" />
-        <title>Protaski - Unblock the Internet. Stay Private in China.</title>
         <style>
-            @media (max-width: 450px) {
-                p {
-                    margin-left: 0.5rem;
-                    margin-right: 0.5rem;
-                }
-
-                input {
-                    max-width: 100%;
-                }
-
-                .container {
-                    margin: 2rem auto;
-                }
-
-                .logo {
-                    margin: 0;
-                }
-
-                .logo svg {
-                    max-width: 100%;
-                    height: auto;
-                    display: block;
-                    margin: 0 auto;
-                }
-
-                .features-section {
-                    padding: 1rem;
-                }
-
-                .email-signup input,
-                .email-signup button {
-                    display: block;
-                    width: 100%;
-                    box-sizing: border-box;
-                    margin: 0.5rem 0;
-                }
-
-                .email-signup button {
-                    margin-left: 0;
-                }
-            }
-
             html,
             body {
                 margin: 0;
@@ -129,16 +110,54 @@
                 line-height: 1.5;
             }
 
+            .preview-image {
+                max-width: 100%;
+                height: auto;
+                margin-bottom: 1rem;
+            }
+
             .features-section {
-                text-align: center;
-                padding: 1rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 1.4rem;
+            }
+
+            .features-container {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+
+            .preview-image {
+                max-width: 100%;
+                height: auto;
+                margin: 2rem;
+            }
+
+            .feature-overview {
+                max-width: 30rem;
+                text-align: start;
+                margin: 0;
+                padding-bottom: 2rem;
+            }
+
+            .feature-item {
+                font-weight: bold;
+                color: #4b0606;
+            }
+
+            .feature-items {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
             }
 
             .feature-item {
                 font-size: 1rem;
                 font-weight: bold;
                 color: #4b0606;
-                margin: 0.8rem;
+                margin: 0.5rem 0;
             }
 
             #ctaUsers {
@@ -156,6 +175,7 @@
                 border: 1px solid #ccc;
                 border-radius: 4px;
                 font-size: 1rem;
+                margin-top: 2rem;
             }
 
             .email-signup button {
@@ -213,6 +233,80 @@
                 margin-top: 1rem;
                 font-size: 0.8rem;
                 color: #999;
+            }
+
+            @media (max-width: 450px) {
+                h2 {
+                    line-height: 1.8rem;
+                }
+
+                .features-container {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .feature-items {
+                    display: block;
+                    max-width: 100%;
+                    padding-left: 0;
+                }
+
+                .feature-item {
+                    margin-bottom: 2rem;
+                    line-height: 1.8rem;
+                }
+
+                p {
+                    margin-left: 0.5rem;
+                    margin-right: 0.5rem;
+                }
+
+                input {
+                    max-width: 100%;
+                }
+
+                .container {
+                    margin: 2rem auto;
+                }
+
+                .logo {
+                    margin: 0;
+                }
+
+                .logo svg {
+                    max-width: 100%;
+                    height: auto;
+                    display: block;
+                    margin: 0 auto;
+                }
+
+                .features-section {
+                    padding: 1rem;
+                    margin-bottom: 1rem;
+                }
+
+                .feature-overview {
+                    text-align: center;
+                    margin-top: 2rem;
+                    line-height: 1.8rem;
+                }
+                .preview-image {
+                    max-width: 100%;
+                    margin-bottom: 1rem;
+                }
+
+                .email-signup input,
+                .email-signup button {
+                    display: block;
+                    width: 100%;
+                    box-sizing: border-box;
+                    margin: 0.5rem 0;
+                }
+
+                .email-signup button {
+                    margin-left: 0;
+                }
             }
         </style>
 
@@ -427,37 +521,58 @@
                 </svg>
             </div>
             <h2>Unblock the Internet. Stay Private in China.</h2>
-            <p>
-                The premium VPN built for China—stay private, secure, and fast.
-                Our advanced technology ensures seamless access to the open
-                internet, even against the latest censorship updates.
-            </p>
             <section class="features-section">
-                <p class="feature-item">
-                    🌍
-                    <b
-                        >Stay Connected: Works Even Under China's Strictest
-                        Blocks</b
-                    >
-                </p>
-                <p class="feature-item">
-                    🔒
-                    <b>Secure & Private: Military-Grade Encryption, No Logs</b>
-                </p>
-                <p class="feature-item">
-                    💡
-                    <b
-                        >Tailored for China: Localized Support in English &
-                        Chinese</b
-                    >
-                </p>
-                <p class="feature-item">
-                    👤
-                    <b
-                        >1-on-1 VPN Setup: Personalized Help for a Smooth
-                        Start</b
-                    >
-                </p>
+                <div class="features-container">
+                    <img
+                        src="./protaski-ui.svg"
+                        class="preview-image"
+                        alt="Protaski Mobile Preview"
+                    />
+                    <div class="feature-items">
+                        <p class="feature-overview">
+                            The premium VPN built for China—stay private,
+                            secure, and fast. WireGuard ensures seamless access
+                            to the open internet, even against the latest
+                            censorship updates.
+                        </p>
+                        <p class="feature-item">
+                            🌍
+                            <b
+                                >Stay Connected: Works Even Under China's
+                                Strictest Blocks</b
+                            >
+                        </p>
+                        <p class="feature-item">
+                            🔒
+                            <b
+                                >Secure & Private: WireGuard Encryption, No
+                                Logs</b
+                            >
+                        </p>
+                        <p class="feature-item">
+                            💡
+                            <b
+                                >Tailored for China: Localized Support in
+                                English & Chinese</b
+                            >
+                        </p>
+                        <p class="feature-item">
+                            👤
+                            <b
+                                >1-on-1 VPN Setup: Personalized Help for a
+                                Smooth Start</b
+                            >
+                        </p>
+                        <section class="email-signup">
+                            <input
+                                type="email"
+                                id="emailInput"
+                                placeholder="Enter your email"
+                            />
+                            <button onclick="submitEmail()">Sign Up</button>
+                        </section>
+                    </div>
+                </div>
             </section>
             <p>
                 <b
@@ -467,17 +582,8 @@
                 >
             </p>
             <p id="ctaUsers">
-                First 50 users get lifetime access for free with VPN setup
-                support.
+                First 50 users get a 3-month free trial with VPN setup support.
             </p>
-            <section class="email-signup">
-                <input
-                    type="email"
-                    id="emailInput"
-                    placeholder="Enter your email"
-                />
-                <button onclick="submitEmail()">Sign Up</button>
-            </section>
             <div class="social">
                 <!-- <a href="https://discord.gg/KquXCjwmrx" target="_blank">
                     <i class="fab fa-discord"></i>
