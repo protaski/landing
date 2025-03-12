@@ -637,6 +637,7 @@
                     if (window.dataLayer) {
                         window.dataLayer.push({
                             event: 'subscribed',
+                            email: email,
                         })
                     }
                     const emailsRef = ref(database, 'emails')
