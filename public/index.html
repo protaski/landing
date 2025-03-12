@@ -634,6 +634,11 @@
             window.submitEmail = function () {
                 const email = document.getElementById('emailInput').value
                 if (email) {
+                    if (window.dataLayer) {
+                        window.dataLayer.push({
+                            event: 'subscribed'
+                        })
+                    }
                     const emailsRef = ref(database, 'emails')
                     push(emailsRef, { email: email })
                         .then(() => {
