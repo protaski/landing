@@ -42,7 +42,7 @@
                 color: #fff;
             }
 
-            .feedback-input {
+            #feedbackInput {
                 width: 20rem;
                 height: 200px;
                 padding: 10px;
@@ -90,7 +90,7 @@
         <div class="container">
             <h1>Feedback</h1>
             <textarea
-                class="feedback-input"
+                id="feedbackInput"
                 placeholder="Please share feedback here..."
             ></textarea>
             <br />
@@ -114,6 +114,7 @@
             import firebaseConfig from './firebaseConfig.js'
 
             const app = initializeApp(firebaseConfig)
+            const analytics = getAnalytics(app)
             const database = getDatabase(app)
 
             window.submitFeedback = function () {
