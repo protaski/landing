@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <script>
+            ;(function (w, d, s, l, i) {
+                w[l] = w[l] || []
+                w[l].push({
+                    'gtm.start': new Date().getTime(),
+                    event: 'gtm.js',
+                })
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != 'dataLayer' ? '&l=' + l : ''
+                j.async = true
+                j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
+                f.parentNode.insertBefore(j, f)
+            })(window, document, 'script', 'dataLayer', 'GTM-57FZP5N')
+        </script>
+        <script src="env.js"></script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Protaski - Stay Connected Privately in China.</title>
+        <link rel="manifest" href="/site.webmanifest" />
+        <style>
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+                min-height: 100vh;
+            }
+            body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                background-color: #4b0606;
+                overflow-y: auto;
+                font-family: 'Arial', 'Helvetica', sans-serif;
+            }
+
+            h1 {
+                color: #fff;
+            }
+
+            .feedback-input {
+                width: 20rem;
+                height: 200px;
+                padding: 10px;
+                font-size: 1rem;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                margin-top: 20px;
+                resize: vertical;
+            }
+            .button-group {
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+                margin-top: 20px;
+            }
+            .submit-button,
+            .back-button {
+                width: 100%;
+                padding: 10px 20px;
+                font-size: 1rem;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            .submit-button {
+                background-color: #fff;
+                color: #4b0606;
+            }
+            .back-button {
+                background-color: #4b0606;
+                color: #fff;
+                border: 1px solid #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <noscript
+            ><iframe
+                src="https://www.googletagmanager.com/ns.html?id=GTM-57FZP5N"
+                height="0"
+                width="0"
+                style="display: none; visibility: hidden"
+            ></iframe
+        ></noscript>
+        <div class="container">
+            <h1>Feedback</h1>
+            <textarea
+                class="feedback-input"
+                placeholder="Please share feedback here..."
+            ></textarea>
+            <br />
+            <div class="button-group">
+                <button
+                    class="back-button"
+                    onclick="window.location.href='index.html'"
+                >
+                    Back
+                </button>
+                <button class="submit-button">Submit</button>
+            </div>
+        </div>
+        <script type="module">
+            import { initializeApp } from 'https://www.gstatic.com/firebasejs/11.3.1/firebase-app.js'
+            import {
+                getDatabase,
+                ref,
+                push,
+            } from 'https://www.gstatic.com/firebasejs/11.3.1/firebase-database.js'
+            import firebaseConfig from './firebaseConfig.js'
+
+            const app = initializeApp(firebaseConfig)
+            const database = getDatabase(app)
+
+            window.submitFeedback = function () {
+                const feedback = document.getElementById('feedbackInput').value
+                if (feedback) {
+                    push(ref(database, 'feedback'), { feedback })
+                        .then(() => {
+                            alert('Thank you for your feedback!')
+                            document.getElementById('feedbackInput').value = ''
+                        })
+                        .catch((error) => {
+                            console.error('Error submitting feedback:', error)
+                        })
+                }
+            }
+        </script>
+    </body>
+</html>

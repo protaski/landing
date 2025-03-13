@@ -44,6 +44,12 @@
         "destination": "https://protaski.com/terms",
         "type": 301
 
+      },
+      {
+        "regex": "/feedback/.*",
+        "destination": "https://protaski.com/feedback",
+        "type": 301
+
       }
     ]
   }

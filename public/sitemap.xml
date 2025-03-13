@@ -18,4 +18,10 @@
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
+        <url>
+        <loc>https://protaski.com/feedback</loc>
+        <lastmod>2025-03-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 </urlset>
