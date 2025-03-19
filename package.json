@@ -1,21 +1,29 @@
 {
   "name": "landing",
-  "version": "1.2.3",
-  "main": "index.js",
+  "version": "1.3.0",
+  "type": "module",
   "scripts": {
+    "serve": "firebase serve",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "prettify": "prettier --write 'public/*.html'",
     "check-format": "prettier --check '**/*.html'"
   },
   "keywords": [
-    "anonymity", "vpn", "china", "privacy"
+    "anonymity",
+    "vpn",
+    "china",
+    "privacy"
   ],
   "author": "Protaski LLC",
   "license": "ISC",
   "description": "Protaski's landing page",
   "devDependencies": {
-    "prettier": "^3.2.5"
+    "prettier": "^3.5.3"
   },
   "dependencies": {
-    "dotenv": "^16.4.7"
+    "firebase": "^11.4.0",
+    "vite": "^6.2.2"
   }
 }

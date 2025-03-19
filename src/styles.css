@@ -1,0 +1,314 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #4b0606;
+    overflow-y: auto;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+}
+
+input {
+    max-width: 250px;
+}
+
+.container {
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+a {
+    color: #4b0606;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logo {
+    margin: 1rem;
+}
+
+.logo svg {
+    max-width: 100%;
+    height: auto;
+}
+
+h2 {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+p {
+    font-size: 1rem;
+    color: #666;
+    margin: 0 2rem;
+    line-height: 1.5;
+}
+
+.preview-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.features-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.4rem;
+}
+
+.features-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.preview-image {
+    max-width: 100%;
+    height: auto;
+    margin: 2rem;
+}
+
+.feature-overview {
+    max-width: 30rem;
+    text-align: start;
+    margin: 0;
+    padding-bottom: 2rem;
+}
+
+.feature-item {
+    font-weight: bold;
+    color: #4b0606;
+}
+
+.feature-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.feature-item {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #4b0606;
+    margin: 0.5rem 0;
+}
+
+#ctaUsers {
+    margin-top: 2rem;
+    margin-left: 0;
+    font-size: 1.2rem;
+    text-align: start;
+    color: #555;
+    font-weight: bold;
+}
+
+.submit-feedback {
+    text-align: start;
+    margin-left: 0;
+    margin-top: 0.6rem;
+    font-size: 0.9rem;
+}
+
+.email-signup input {
+    height: 1.6rem;
+    width: auto;
+    display: inline-block;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.email-signup button {
+    height: 2.6rem;
+    width: 7rem;
+    display: inline-block;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #4b0606;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 0.5rem;
+}
+
+.social {
+    margin-top: 2rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social a {
+    color: #4b0606;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social a:hover {
+    color: #862828;
+}
+
+.social-links svg {
+    margin-right: 0.5rem;
+}
+
+.footer {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+.footer a {
+    color: #666;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: #999;
+}
+
+
+/* Feedback */
+
+#feedbackInput {
+    width: 20rem;
+    height: 200px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 20px;
+    resize: vertical;
+}
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.back-button {
+    width: 40%;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.submit-button {
+    width: 60%;
+    background-color: #fff;
+    color: #4b0606;
+    border: 1px solid #4b0606;
+    cursor: pointer;
+}
+.back-button {
+    background-color: #4b0606;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+@media (max-width: 450px) {
+    h2 {
+        line-height: 1.8rem;
+    }
+
+    .features-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-items {
+        display: block;
+        max-width: 100%;
+        padding-left: 0;
+    }
+
+    .feature-item {
+        margin-bottom: 2rem;
+        line-height: 1.8rem;
+    }
+
+    p {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    input {
+        max-width: 100%;
+    }
+
+    .container {
+        margin: 2rem auto;
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+    .logo svg {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .features-section {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .feature-overview {
+        text-align: center;
+        margin-top: 2rem;
+        line-height: 1.8rem;
+    }
+    .preview-image {
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    #ctaUsers {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .submit-feedback {
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+
+    .email-signup input,
+    .email-signup button {
+        height: 3rem;
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0.5rem 0;
+    }
+
+    .email-signup button {
+        margin-left: 0;
+    }
+}
