@@ -1,7 +1,7 @@
 {
   "hosting": {
     "site": "protaski-9",
-    "public": "public",
+    "public": "dist",
     "cleanUrls": true,
     "trailingSlash": false,
     "headers": [{
