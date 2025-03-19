@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "prettify": "prettier --write 'public/*.html'",
-    "check-format": "prettier --check '**/*.html'"
+    "check-format": "prettier --check 'public/*.html'"
   },
   "keywords": [
     "anonymity",
