@@ -6,6 +6,12 @@
             src="https://app.termly.io/resource-blocker/110fd9d7-c3d2-49b9-9303-85355655ba7d?autoBlock=off"
         ></script>
         <script>
+            window.addEventListener('TermlyCMPLoaded', function () {
+              window.dataLayer = window.dataLayer || [];
+              dataLayer.push({ event: 'termlyReady' });
+            });
+          </script>
+        <script>
             ;(function (w, d, s, l, i) {
                 w[l] = w[l] || []
                 w[l].push({
