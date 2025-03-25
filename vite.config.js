@@ -13,7 +13,10 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: path.resolve(__dirname, 'public/index.html'),
-        feedback: path.resolve(__dirname, 'public/feedback.html')
+        feedback: path.resolve(__dirname, 'public/feedback.html'),
+        privacy: path.resolve(__dirname, 'public/privacy.html'),
+        terms: path.resolve(__dirname, 'public/terms.html'),
+        error: path.resolve(__dirname, 'public/404.html')
       }
     }
   },
