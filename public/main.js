@@ -61,3 +61,34 @@ function submitFeedback() {
 
 window.submitEmail = submitEmail;
 window.submitFeedback = submitFeedback;
+
+// Conditionally load Google Analytics for non-EEA visitors
+fetch('https://ipapi.co/json/')
+  .then(res => res.json())
+  .then(data => {
+    const isEEA = [
+      'AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR',
+      'DE', 'GR', 'HU', 'IS', 'IE', 'IT', 'LV', 'LI', 'LT', 'LU',
+      'MT', 'NL', 'NO', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE'
+    ].includes(data.country_code);
+    if (!isEEA) {
+      loadGoogleAnalytics();
+    }
+  })
+  .catch(error => {
+    console.error('Error detecting location:', error);
+  });
+
+function loadGoogleAnalytics() {
+  const script = document.createElement('script');
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=GTM-57FZP5N';
+  script.async = true;
+  document.head.appendChild(script);
+
+  script.onload = () => {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'GTM-57FZP5N');
+  };
+}
